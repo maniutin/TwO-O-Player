@@ -13,4 +13,3 @@ class Player
 end
 
 player1 = Player.new('player1', '0/3', '3/3')
-puts player1.info
