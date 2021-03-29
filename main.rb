@@ -52,7 +52,12 @@ else
 end
 
 puts "P1: #{@player2.info} vs P2: #{@player2.info}"
+if @player1.health == 0
+  puts "#{@player2.name} wins with the score of #{@player2.score}"
+elsif @player2.health == 0
+  puts "#{@player1.name} wins with the score of #{@player1.score}"
 puts "-----NEW TURN-----"
+end
 end
 
 
