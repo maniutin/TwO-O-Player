@@ -23,14 +23,15 @@ while @player1.health > 0 || @player2.health > 0
 
   new_game
 
-    if @player1.health == 0
-      puts "#{@player2.name} wins with the score of #{@player2.score}"
-      break
-    end
-    if @player2.health == 0
-      puts "#{@player1.name} wins with the score of #{@player1.score}"
-      break
-    end
+  if @player1.health == 0
+    puts "#{@player2.name} wins with the score of #{@player2.score}"
+    break
+  end
+  
+  if @player2.health == 0
+    puts "#{@player1.name} wins with the score of #{@player1.score}"
+    break
+  end
 end
 
 
