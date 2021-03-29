@@ -1,18 +1,13 @@
 class Question
-  attr_accessor :arg1, :arg2, :answer
+  attr_accessor :arg1, :arg2
 
-  def initialize(arg1, arg2, answer)
+  def initialize(arg1, arg2)
     @arg1 = arg1
     @arg2 = arg2
-    @answer = answer
   end
 
   def question
     "What does #{arg1} plus #{arg2} equal?"
-  end
-
-  def user_answer
-    answer = $stdin.gets.chomp.to_i
   end
 
   def correct_answer
@@ -24,6 +19,5 @@ class Question
   end
 end
 
-question1 = Question.new(5, 3, 8)
 
 

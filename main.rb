@@ -1,12 +1,17 @@
 require './players'
 require './questions'
 
-question1 = Question.new(3, 5, 8)
+
+question1 = Question.new(5, 5)
+
 puts question1.question
 print "> "
-if question1.answer === question1.correct_answer
-  puts "You answered #{$stdin.gets.chomp.to_i}"
+answer = $stdin.gets.chomp.to_i
+
+if answer === question1.correct_answer
+  puts "You answered #{answer}"
   puts "yaaay!"
 else
+  puts "You answered #{answer}"
   puts "noooooooo!"
 end
