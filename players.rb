@@ -8,6 +8,6 @@ class Player
   end
 
   def info
-    "#{name}: Points #{score}/3, HP #{health}/3"
+    "#{name}: Points #{score}, HP #{health}/3"
   end
 end
