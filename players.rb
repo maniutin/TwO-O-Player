@@ -1,15 +1,13 @@
 class Player
   attr_accessor :name, :score, :health
 
-  def initialize(name, score, health)
+  def initialize(name)
     @name = name
-    @score = score
-    @health = health
+    @score = 0
+    @health = 3
   end
 
   def info
-    "#{name}: #{score} points #{health} HP"
+    "#{name}: Points #{score}/3, HP #{health}/3"
   end
 end
-
-player1 = Player.new('player1', '0/3', '3/3')
